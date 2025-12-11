@@ -1015,7 +1015,21 @@
   <button onclick="toggleAll(true)">모든 정답/해설 펼치기</button>
   <button onclick="toggleAll(false)">모든 정답/해설 숨기기</button>
 </div>
+<script>
+  function toggleAnswer(id) {
+    const q = document.getElementById(id);
+    const block = q.querySelector('.answer-block');
+    block.style.display = block.style.display === 'block' ? 'none' : 'block';
+  }
 
+  function toggleAll(show) {
+    const blocks = document.querySelectorAll('.answer-block');
+    blocks.forEach(b => {
+      b.style.display = show ? 'block' : 'none';
+    });
+  }
+</script>
+  
 <h3 class="section-title">Ⅰ. 전체 아키텍처 개념 (1–5번)</h3>
 
 <div id="q1" class="question">
