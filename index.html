@@ -1,0 +1,1027 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8" />
+  <title>GA4 & 마케팅 애널리틱스 객관식 연습문제</title>
+  <style>
+    body {
+      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      line-height: 1.5;
+      margin: 20px;
+      background: #f5f5f5;
+    }
+    h1, h2 {
+      text-align: center;
+    }
+    .section-title {
+      margin-top: 40px;
+      padding: 10px 15px;
+      background: #004c97;
+      color: #fff;
+      border-radius: 4px;
+    }
+    .question {
+      background: #fff;
+      border-radius: 6px;
+      padding: 15px 20px;
+      margin: 15px 0;
+      box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+    }
+    .q-header {
+      font-weight: 600;
+      margin-bottom: 8px;
+    }
+    .options {
+      margin: 8px 0 12px 0;
+    }
+    .options label {
+      display: block;
+      margin: 2px 0;
+      cursor: pointer;
+    }
+    .answer-block {
+      margin-top: 8px;
+      padding: 8px 10px;
+      border-radius: 4px;
+      border: 1px solid #ddd;
+      background: #fafafa;
+      display: none;
+    }
+    .answer-text {
+      font-weight: 600;
+      color: #006400;
+    }
+    .explanation {
+      margin-top: 4px;
+      color: #333;
+    }
+    button.show-answer-btn {
+      padding: 4px 10px;
+      font-size: 0.9rem;
+      border-radius: 4px;
+      border: 1px solid #004c97;
+      background: #ffffff;
+      color: #004c97;
+      cursor: pointer;
+    }
+    button.show-answer-btn:hover {
+      background: #004c97;
+      color: #fff;
+    }
+    .controls-top {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+    .controls-top button {
+      margin: 0 5px;
+      padding: 6px 12px;
+      border-radius: 4px;
+      border: 1px solid #666;
+      background: #fff;
+      cursor: pointer;
+      font-size: 0.9rem;
+    }
+    .controls-top button:hover {
+      background: #eee;
+    }
+  </style>
+</head>
+<body>
+
+<h1>GA4 & 마케팅 애널리틱스 객관식 연습</h1>
+<h2>정답은 버튼을 눌러서 확인해 보세요</h2>
+
+<div class="controls-top">
+  <button onclick="toggleAll(true)">모든 정답/해설 펼치기</button>
+  <button onclick="toggleAll(false)">모든 정답/해설 숨기기</button>
+</div>
+
+<!-- ========== 섹션 1: GA·GA4 개념 및 기본 구조 (1–15) ========== -->
+<h3 class="section-title">Ⅰ. GA·GA4 개념 및 기본 구조 (1–15번)</h3>
+
+<div id="q1" class="question" data-answer="B">
+  <div class="q-header">1. 웹사이트나 앱에서 발생하는 사용자 행동 데이터를 수집·분석해 비즈니스 의사결정에 활용하는 도구를 가장 잘 설명하는 용어는 무엇인가?</div>
+  <div class="options">
+    <label><input type="radio" name="q1"> A) CRM</label>
+    <label><input type="radio" name="q1"> B) Google Analytics 4</label>
+    <label><input type="radio" name="q1"> C) ERP</label>
+    <label><input type="radio" name="q1"> D) DMP</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q1')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: B) Google Analytics 4</div>
+    <div class="explanation">GA4는 웹·앱에서 발생하는 사용자 행동 데이터를 수집·분석하여 마케팅과 비즈니스 의사결정을 지원하는 대표적인 디지털 애널리틱스 도구이다.</div>
+  </div>
+</div>
+
+<div id="q2" class="question" data-answer="B">
+  <div class="q-header">2. Analytics의 핵심 목적을 가장 잘 나타내는 것은 무엇인가?</div>
+  <div class="options">
+    <label><input type="radio" name="q2"> A) 데이터를 저장하기 위한 시스템 구축</label>
+    <label><input type="radio" name="q2"> B) 데이터를 이용해 의미 있는 패턴을 발견하고 의사결정을 돕는 것</label>
+    <label><input type="radio" name="q2"> C) 보고서를 이쁘게 디자인하는 것</label>
+    <label><input type="radio" name="q2"> D) 서버 트래픽을 줄이는 것</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q2')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: B) 데이터를 이용해 의미 있는 패턴을 발견하고 의사결정을 돕는 것</div>
+    <div class="explanation">애널리틱스의 본질은 단순 데이터 수집이 아니라, 데이터를 분석해 인사이트를 도출하고 실제 비즈니스 의사결정에 반영하는 데 있다.</div>
+  </div>
+</div>
+
+<div id="q3" class="question" data-answer="B">
+  <div class="q-header">3. GA4에서 한 명의 사용자가 사이트나 앱에서 활동을 시작해 일정 시간 동안 이어지는 방문 단위를 무엇이라고 부르는가?</div>
+  <div class="options">
+    <label><input type="radio" name="q3"> A) User</label>
+    <label><input type="radio" name="q3"> B) Session</label>
+    <label><input type="radio" name="q3"> C) Event group</label>
+    <label><input type="radio" name="q3"> D) Audience</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q3')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: B) Session</div>
+    <div class="explanation">세션은 사용자가 웹사이트·앱에 들어와 일정 시간 동안 수행한 활동을 묶어 표현한 단위이다.</div>
+  </div>
+</div>
+
+<div id="q4" class="question" data-answer="B">
+  <div class="q-header">4. GA4에서 기본적인 데이터 수집 단위(클릭, 스크롤, 페이지 조회 등)를 부르는 용어는 무엇인가?</div>
+  <div class="options">
+    <label><input type="radio" name="q4"> A) Hit</label>
+    <label><input type="radio" name="q4"> B) Event</label>
+    <label><input type="radio" name="q4"> C) Page</label>
+    <label><input type="radio" name="q4"> D) View</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q4')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: B) Event</div>
+    <div class="explanation">GA4는 모든 상호작용을 이벤트 기반으로 수집하며, 페이지뷰도 event의 한 종류로 처리된다.</div>
+  </div>
+</div>
+
+<div id="q5" class="question" data-answer="B">
+  <div class="q-header">5. 다음 중 GA4에서 기본적으로 자동 수집되는 이벤트의 예로 적절한 것은?</div>
+  <div class="options">
+    <label><input type="radio" name="q5"> A) purchase</label>
+    <label><input type="radio" name="q5"> B) page_view</label>
+    <label><input type="radio" name="q5"> C) refund</label>
+    <label><input type="radio" name="q5"> D) sign_up</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q5')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: B) page_view</div>
+    <div class="explanation">GA4 기본 설치 시 page_view, scroll 등 일부 이벤트는 별도 설정 없이 자동으로 수집된다.</div>
+  </div>
+</div>
+
+<div id="q6" class="question" data-answer="C">
+  <div class="q-header">6. GA4에서 “전환(conversion)”으로 설정해 추적하는 가장 적절한 행동은 무엇인가?</div>
+  <div class="options">
+    <label><input type="radio" name="q6"> A) 페이지 스크롤 50% 달성</label>
+    <label><input type="radio" name="q6"> B) 특정 버튼에 마우스를 올린 것</label>
+    <label><input type="radio" name="q6"> C) 예약 완료나 구매 완료 등 비즈니스 목표와 직결되는 행동</label>
+    <label><input type="radio" name="q6"> D) 페이지 진입 직후 이탈</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q6')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: C) 예약 완료나 구매 완료 등 비즈니스 목표와 직결되는 행동</div>
+    <div class="explanation">전환은 매출, 예약, 회원가입 등 조직의 핵심 목표 달성에 직접 연결되는 행동을 의미한다.</div>
+  </div>
+</div>
+
+<div id="q7" class="question" data-answer="C">
+  <div class="q-header">7. GA4에서 “Users” 지표는 주로 무엇을 의미하는가?</div>
+  <div class="options">
+    <label><input type="radio" name="q7"> A) 총 페이지뷰 수</label>
+    <label><input type="radio" name="q7"> B) 로그인한 고객 수</label>
+    <label><input type="radio" name="q7"> C) 중복을 제거한 고유 사용자 수</label>
+    <label><input type="radio" name="q7"> D) 신규 가입자 수</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q7')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: C) 중복을 제거한 고유 사용자 수</div>
+    <div class="explanation">Users는 동일 사용자의 여러 세션을 하나로 묶어 고유 사용자를 추정한 값이다.</div>
+  </div>
+</div>
+
+<div id="q8" class="question" data-answer="B">
+  <div class="q-header">8. GA4에서 “Page Views”는 무엇을 의미하는가?</div>
+  <div class="options">
+    <label><input type="radio" name="q8"> A) 한 사용자가 한 번 방문한 세션 수</label>
+    <label><input type="radio" name="q8"> B) 특정 페이지 URL이 조회된 총 횟수</label>
+    <label><input type="radio" name="q8"> C) 고유 페이지 방문자 수</label>
+    <label><input type="radio" name="q8"> D) 전환을 발생시킨 페이지 수</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q8')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: B) 특정 페이지 URL이 조회된 총 횟수</div>
+    <div class="explanation">페이지뷰는 중복을 포함해 페이지가 로드된 전체 횟수를 의미한다.</div>
+  </div>
+</div>
+
+<div id="q9" class="question" data-answer="C">
+  <div class="q-header">9. GA4에서 “Conversions” 보고서가 주로 답해주는 질문은 무엇인가?</div>
+  <div class="options">
+    <label><input type="radio" name="q9"> A) 누가, 언제 사이트에 들어왔는가</label>
+    <label><input type="radio" name="q9"> B) 어떤 경로로 트래픽이 들어오는가</label>
+    <label><input type="radio" name="q9"> C) 어떤 행동이 전환으로 가장 많이 발생했는가</label>
+    <label><input type="radio" name="q9"> D) 어떤 기기에서 접속했는가</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q9')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: C) 어떤 행동이 전환으로 가장 많이 발생했는가</div>
+    <div class="explanation">전환 보고서는 등록된 전환 이벤트가 얼마나, 어떤 조건에서 발생했는지 보여준다.</div>
+  </div>
+</div>
+
+<div id="q10" class="question" data-answer="B">
+  <div class="q-header">10. GA4에서 “시간 기반 분석(Time Analysis)”이 특히 유용한 이유로 가장 적절한 것은?</div>
+  <div class="options">
+    <label><input type="radio" name="q10"> A) 시간대별 서버 비용을 계산할 수 있다.</label>
+    <label><input type="radio" name="q10"> B) 요일/시간대별 사용자 행동 패턴을 파악해 마케팅 타이밍을 최적화할 수 있다.</label>
+    <label><input type="radio" name="q10"> C) 시간대별 디자인 선호도를 알 수 있다.</label>
+    <label><input type="radio" name="q10"> D) 시간대별 로그인을 제한할 수 있다.</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q10')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: B) 요일/시간대별 사용자 행동 패턴을 파악해 마케팅 타이밍을 최적화할 수 있다.</div>
+    <div class="explanation">어느 시간대에 유입·전환이 집중되는지 파악하면 캠페인 집행 시간과 예산 배분을 조정할 수 있다.</div>
+  </div>
+</div>
+
+<div id="q11" class="question" data-answer="A">
+  <div class="q-header">11. 다음 중 GA4가 제공하는 기본 리포트 영역에 해당하는 것은?</div>
+  <div class="options">
+    <label><input type="radio" name="q11"> A) Acquisition, Engagement, Monetization, User</label>
+    <label><input type="radio" name="q11"> B) Sales, Finance, HR, IT</label>
+    <label><input type="radio" name="q11"> C) Planning, Doing, Checking, Acting</label>
+    <label><input type="radio" name="q11"> D) Brand, Performance, Social, Search</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q11')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: A) Acquisition, Engagement, Monetization, User</div>
+    <div class="explanation">GA4 기본 리포트는 유입, 참여, 매출, 사용자 특성의 네 영역으로 구성된다.</div>
+  </div>
+</div>
+
+<div id="q12" class="question" data-answer="A">
+  <div class="q-header">12. GA4에서 “User Acquisition” 보고서는 주로 어떤 내용을 보여주는가?</div>
+  <div class="options">
+    <label><input type="radio" name="q12"> A) 유입 채널별 신규 사용자의 유입 현황</label>
+    <label><input type="radio" name="q12"> B) 사이트 내 페이지간 이동 경로</label>
+    <label><input type="radio" name="q12"> C) 장바구니 이탈 비율</label>
+    <label><input type="radio" name="q12"> D) 고객 생애가치(LTV)</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q12')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: A) 유입 채널별 신규 사용자의 유입 현황</div>
+    <div class="explanation">User Acquisition은 어떤 채널을 통해 새로운 사용자가 사이트·앱에 처음 방문하는지를 보여준다.</div>
+  </div>
+</div>
+
+<div id="q13" class="question" data-answer="B">
+  <div class="q-header">13. GA4에서 “Engagement” 보고서가 특히 집중하는 지표는 무엇인가?</div>
+  <div class="options">
+    <label><input type="radio" name="q13"> A) 인사 평가 점수</label>
+    <label><input type="radio" name="q13"> B) 참여 세션 수, 이벤트 수, 전환 수 등 사용자 행동의 깊이</label>
+    <label><input type="radio" name="q13"> C) 서버 응답 속도</label>
+    <label><input type="radio" name="q13"> D) 재고 회전율</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q13')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: B) 참여 세션 수, 이벤트 수, 전환 수 등 사용자 행동의 깊이</div>
+    <div class="explanation">Engagement 보고서는 사용자가 얼마나 적극적으로 상호작용하고 있는지를 보여준다.</div>
+  </div>
+</div>
+
+<div id="q14" class="question" data-answer="B">
+  <div class="q-header">14. GA4에서 “Monetization” 보고서가 가장 유용한 상황은?</div>
+  <div class="options">
+    <label><input type="radio" name="q14"> A) 커리큘럼 개편</label>
+    <label><input type="radio" name="q14"> B) 이커머스 매출, 구매 여정, 결제 단계 이탈 등을 분석할 때</label>
+    <label><input type="radio" name="q14"> C) 직원 만족도 조사</label>
+    <label><input type="radio" name="q14"> D) 투자 포트폴리오 분석</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q14')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: B) 이커머스 매출, 구매 여정, 결제 단계 이탈 등을 분석할 때</div>
+    <div class="explanation">Monetization은 매출 중심 리포트로, 구매 관련 전환과 매출 구조를 파악하는 데 사용된다.</div>
+  </div>
+</div>
+
+<div id="q15" class="question" data-answer="B">
+  <div class="q-header">15. GA4 데모 계정(예: Google Merchandise Store)을 활용하는 주된 목적은?</div>
+  <div class="options">
+    <label><input type="radio" name="q15"> A) 테스트용 광고 집행</label>
+    <label><input type="radio" name="q15"> B) 안정적인 연습용 실제 데이터로 보고서 연습</label>
+    <label><input type="radio" name="q15"> C) 서버 모니터링</label>
+    <label><input type="radio" name="q15"> D) GA4 라이선스 구매 절차 연습</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q15')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: B) 안정적인 연습용 실제 데이터로 보고서 연습</div>
+    <div class="explanation">데모 계정은 실제 이커머스 데이터를 기반으로 GA4 기능을 자유롭게 연습할 수 있도록 제공된다.</div>
+  </div>
+</div>
+
+<!-- ========== 섹션 2: 전환·전환율, 퍼널, CVR (16–30) ========== -->
+<h3 class="section-title">Ⅱ. 전환·전환율, 퍼널, CVR (16–30번)</h3>
+
+<div id="q16" class="question" data-answer="B">
+  <div class="q-header">16. 전환율(Conversion Rate, CVR)을 가장 정확히 설명한 것은?</div>
+  <div class="options">
+    <label><input type="radio" name="q16"> A) 페이지뷰 수 ÷ 사용자 수</label>
+    <label><input type="radio" name="q16"> B) 전환 수 ÷ 세션 수 또는 전환 수 ÷ 클릭 수</label>
+    <label><input type="radio" name="q16"> C) 신규 사용자 수 ÷ 전체 사용자 수</label>
+    <label><input type="radio" name="q16"> D) 이탈 수 ÷ 방문 수</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q16')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: B) 전환 수 ÷ 세션 수 또는 전환 수 ÷ 클릭 수</div>
+    <div class="explanation">전환율은 특정 행동이 얼마나 자주 일어났는지, 전환 수를 노출·클릭·세션 등 분모와 비교해 계산한 값이다.</div>
+  </div>
+</div>
+
+<div id="q17" class="question" data-answer="C">
+  <div class="q-header">17. 어떤 랜딩 페이지에 1,000명이 방문해 그 중 100명이 예약을 완료했다. 이 랜딩 페이지의 전환율은?</div>
+  <div class="options">
+    <label><input type="radio" name="q17"> A) 1%</label>
+    <label><input type="radio" name="q17"> B) 5%</label>
+    <label><input type="radio" name="q17"> C) 10%</label>
+    <label><input type="radio" name="q17"> D) 50%</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q17')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: C) 10%</div>
+    <div class="explanation">전환율 = 100 / 1,000 × 100 = 10% 이다.</div>
+  </div>
+</div>
+
+<div id="q18" class="question" data-answer="B">
+  <div class="q-header">18. 마케팅 퍼널(funnel) 분석의 주요 목적은 무엇인가?</div>
+  <div class="options">
+    <label><input type="radio" name="q18"> A) 데이터 수집 비용을 줄이는 것</label>
+    <label><input type="radio" name="q18"> B) 단계별 이탈을 파악해 어디에서 최적화가 필요한지 찾는 것</label>
+    <label><input type="radio" name="q18"> C) 디자인 일관성을 유지하는 것</label>
+    <label><input type="radio" name="q18"> D) 법적 이슈를 파악하는 것</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q18')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: B) 단계별 이탈을 파악해 어디에서 최적화가 필요한지 찾는 것</div>
+    <div class="explanation">퍼널은 전환 여정의 어느 단계에서 사용자가 많이 떨어지는지 확인하고 개선 포인트를 찾기 위해 사용한다.</div>
+  </div>
+</div>
+
+<div id="q19" class="question" data-answer="C">
+  <div class="q-header">19. 다음 중 전환 퍼널 상위 단계(Upper Funnel)에 해당하는 지표로 가장 적절한 것은?</div>
+  <div class="options">
+    <label><input type="radio" name="q19"> A) 구매 완료 수</label>
+    <label><input type="radio" name="q19"> B) 장바구니 담기 수</label>
+    <label><input type="radio" name="q19"> C) 인지/노출(임프레션)</label>
+    <label><input type="radio" name="q19"> D) 회원탈퇴 수</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q19')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: C) 인지/노출(임프레션)</div>
+    <div class="explanation">상단 퍼널은 브랜드 인지도와 관심 형성 단계로, 임프레션과 도달률 같은 지표가 대표적이다.</div>
+  </div>
+</div>
+
+<div id="q20" class="question" data-answer="C">
+  <div class="q-header">20. 다음 중 전환 퍼널 하위 단계(Lower Funnel)에 가장 가까운 행동은?</div>
+  <div class="options">
+    <label><input type="radio" name="q20"> A) 동영상 조회</label>
+    <label><input type="radio" name="q20"> B) 장바구니 담기</label>
+    <label><input type="radio" name="q20"> C) 결제 완료</label>
+    <label><input type="radio" name="q20"> D) 브랜드 검색 노출</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q20')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: C) 결제 완료</div>
+    <div class="explanation">하위 퍼널은 실제 전환이 일어나는 단계로, 구매·결제 완료 같은 행동이 여기에 해당한다.</div>
+  </div>
+</div>
+
+<div id="q21" class="question" data-answer="B">
+  <div class="q-header">21. A/B 테스트를 통해 주로 확인하고자 하는 것은 무엇인가?</div>
+  <div class="options">
+    <label><input type="radio" name="q21"> A) 서버 사양의 차이</label>
+    <label><input type="radio" name="q21"> B) 디자인·카피 등의 변화가 CTR, CVR 등에 미치는 영향</label>
+    <label><input type="radio" name="q21"> C) 직원들의 만족도</label>
+    <label><input type="radio" name="q21"> D) 경쟁사 수익</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q21')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: B) 디자인·카피 등의 변화가 CTR, CVR 등에 미치는 영향</div>
+    <div class="explanation">A/B 테스트는 두 버전의 성과 차이를 정량적으로 비교해 더 나은 버전을 찾는 실험이다.</div>
+  </div>
+</div>
+
+<div id="q22" class="question" data-answer="B">
+  <div class="q-header">22. 퍼널 단계별로 “100 → 75 → 40 → 25 → 10”으로 사용자 수가 줄어드는 경우, 가장 큰 개선 우선순위를 가져야 할 단계는 일반적으로 어디인가?</div>
+  <div class="options">
+    <label><input type="radio" name="q22"> A) 100 → 75</label>
+    <label><input type="radio" name="q22"> B) 75 → 40</label>
+    <label><input type="radio" name="q22"> C) 40 → 25</label>
+    <label><input type="radio" name="q22"> D) 25 → 10</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q22')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: B) 75 → 40</div>
+    <div class="explanation">비율로 보았을 때 75에서 40으로 가장 크게 떨어지므로 이 구간의 원인을 먼저 찾는 것이 효율적이다.</div>
+  </div>
+</div>
+
+<div id="q23" class="question" data-answer="B">
+  <div class="q-header">23. 다음 중 “전환 지표”로 볼 수 있는 것은 무엇인가?</div>
+  <div class="options">
+    <label><input type="radio" name="q23"> A) 페이지 체류 시간</label>
+    <label><input type="radio" name="q23"> B) 회원가입 완료 수</label>
+    <label><input type="radio" name="q23"> C) 스크롤 깊이</label>
+    <label><input type="radio" name="q23"> D) 방문 기기 비율</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q23')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: B) 회원가입 완료 수</div>
+    <div class="explanation">회원가입 완료와 같은 행동은 명확한 목표 달성 지표이므로 전환 지표로 설정하기 적합하다.</div>
+  </div>
+</div>
+
+<div id="q24" class="question" data-answer="A">
+  <div class="q-header">24. 전환율을 개선하기 위해 가장 먼저 점검해야 할 사항으로 적절한 것은?</div>
+  <div class="options">
+    <label><input type="radio" name="q24"> A) 랜딩 페이지 로딩 속도와 모바일 최적화 여부</label>
+    <label><input type="radio" name="q24"> B) 사무실 위치</label>
+    <label><input type="radio" name="q24"> C) 직원 복지 제도</label>
+    <label><input type="radio" name="q24"> D) 회의 일정</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q24')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: A) 랜딩 페이지 로딩 속도와 모바일 최적화 여부</div>
+    <div class="explanation">로딩이 느리거나 모바일 UX가 나쁘면 사용자가 전환에 도달하기 전에 이탈하기 쉽다.</div>
+  </div>
+</div>
+
+<div id="q25" class="question" data-answer="B">
+  <div class="q-header">25. GA4에서 특정 이벤트를 “전환”으로 등록하면 어떤 변화가 생기는가?</div>
+  <div class="options">
+    <label><input type="radio" name="q25"> A) 보고서에서 숨겨진다.</label>
+    <label><input type="radio" name="q25"> B) 전환 리포트에 별도 집계되고 마케팅 성과 분석에 핵심 지표로 활용된다.</label>
+    <label><input type="radio" name="q25"> C) 자동으로 삭제된다.</label>
+    <label><input type="radio" name="q25"> D) 세션이 종료된다.</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q25')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: B) 전환 리포트에 별도 집계되고 마케팅 성과 분석에 핵심 지표로 활용된다.</div>
+    <div class="explanation">전환으로 지정된 이벤트는 Conversions 보고서와 광고 연동 등에서 핵심 지표로 사용된다.</div>
+  </div>
+</div>
+
+<div id="q26" class="question" data-answer="C">
+  <div class="q-header">26. 퍼널 분석에서 “병목(bottleneck)”이라는 표현이 의미하는 것은?</div>
+  <div class="options">
+    <label><input type="radio" name="q26"> A) 가장 데이터가 많은 구간</label>
+    <label><input type="radio" name="q26"> B) 전환율이 가장 높은 구간</label>
+    <label><input type="radio" name="q26"> C) 이탈이 가장 심한 구간</label>
+    <label><input type="radio" name="q26"> D) 데이터가 아예 없는 구간</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q26')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: C) 이탈이 가장 심한 구간</div>
+    <div class="explanation">병목은 다음 단계로 잘 넘어가지 못해 전환 흐름이 막히는 지점을 의미한다.</div>
+  </div>
+</div>
+
+<div id="q27" class="question" data-answer="B">
+  <div class="q-header">27. 전환율(CVR)을 계산할 때 분모로 가장 자주 쓰이는 것은?</div>
+  <div class="options">
+    <label><input type="radio" name="q27"> A) 직원 수</label>
+    <label><input type="radio" name="q27"> B) 세션 수나 클릭 수</label>
+    <label><input type="radio" name="q27"> C) 페이지 수</label>
+    <label><input type="radio" name="q27"> D) 서버 수</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q27')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: B) 세션 수나 클릭 수</div>
+    <div class="explanation">전환율은 방문 또는 광고 클릭 중 얼마나 전환으로 이어졌는지를 보기 위해 세션·클릭 수를 분모로 사용한다.</div>
+  </div>
+</div>
+
+<div id="q28" class="question" data-answer="A">
+  <div class="q-header">28. 한 캠페인에서 클릭 수는 많지만 전환 수가 매우 적다. 가장 우선적으로 의심해야 할 문제는?</div>
+  <div class="options">
+    <label><input type="radio" name="q28"> A) 트래픽 품질 또는 랜딩 페이지 경험의 문제</label>
+    <label><input type="radio" name="q28"> B) 서버 명칭</label>
+    <label><input type="radio" name="q28"> C) 보고서 레이아웃</label>
+    <label><input type="radio" name="q28"> D) 파일 이름</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q28')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: A) 트래픽 품질 또는 랜딩 페이지 경험의 문제</div>
+    <div class="explanation">많은 사용자가 클릭했지만 전환하지 않는다면, 기대와 다른 랜딩 페이지 경험이나 타겟팅 문제가 있을 수 있다.</div>
+  </div>
+</div>
+
+<div id="q29" class="question" data-answer="A">
+  <div class="q-header">29. “전환당 비용(CPA)”을 낮추고 싶을 때 일반적으로 추구하는 방향은?</div>
+  <div class="options">
+    <label><input type="radio" name="q29"> A) 광고비는 그대로 두고 전환 수를 늘리는 것</label>
+    <label><input type="radio" name="q29"> B) 광고비와 전환 수를 둘 다 줄이는 것</label>
+    <label><input type="radio" name="q29"> C) 광고비를 늘리고 전환을 줄이는 것</label>
+    <label><input type="radio" name="q29"> D) 지표를 보지 않는 것</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q29')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: A) 광고비는 그대로 두고 전환 수를 늘리는 것</div>
+    <div class="explanation">CPA = 광고비 ÷ 전환 수이므로, 전환 수를 늘리면 단가가 낮아진다.</div>
+  </div>
+</div>
+
+<div id="q30" class="question" data-answer="A">
+  <div class="q-header">30. 전환 퍼널 분석 결과, 결제 페이지에서 이탈률이 매우 높다. 우선 확인해야 할 사항으로 가장 적절한 것은?</div>
+  <div class="options">
+    <label><input type="radio" name="q30"> A) 결제 과정의 오류나 UX 문제</label>
+    <label><input type="radio" name="q30"> B) 회사 로고 컬러</label>
+    <label><input type="radio" name="q30"> C) 사무실 면적</label>
+    <label><input type="radio" name="q30"> D) 이메일 서명 형식</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q30')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: A) 결제 과정의 오류나 UX 문제</div>
+    <div class="explanation">결제 단계에서 이탈이 많으면 오류, 입력 단계가 너무 복잡한 UX 등 실제 사용성 문제를 먼저 의심해야 한다.</div>
+  </div>
+</div>
+
+<!-- ========== 섹션 3: GA4 실습 – 버거샵·GTM·이벤트 (31–45) ========== -->
+<h3 class="section-title">Ⅲ. GA4 실습: 버거샵·GTM·이벤트 (31–45번)</h3>
+
+<div id="q31" class="question" data-answer="B">
+  <div class="q-header">31. 강의의 버거샵 실습에서 “예약(Reservation)” 버튼 클릭을 전환으로 측정하려는 주된 이유는?</div>
+  <div class="options">
+    <label><input type="radio" name="q31"> A) 단순 페이지뷰를 늘리기 위해</label>
+    <label><input type="radio" name="q31"> B) 비즈니스 목표인 예약 완료 행동을 직접 측정하기 위해</label>
+    <label><input type="radio" name="q31"> C) 광고 노출 수를 늘리기 위해</label>
+    <label><input type="radio" name="q31"> D) 서버 로그를 줄이기 위해</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q31')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: B) 비즈니스 목표인 예약 완료 행동을 직접 측정하기 위해</div>
+    <div class="explanation">버거샵 시나리오에서 예약 버튼은 매장 예약이라는 핵심 비즈니스 목표와 직결되므로 전환으로 추적한다.</div>
+  </div>
+</div>
+
+<div id="q32" class="question" data-answer="B">
+  <div class="q-header">32. 버거샵 실습에서 HTML 버튼에 포함된 <code>data-cta</code> 속성의 주요 목적은?</div>
+  <div class="options">
+    <label><input type="radio" name="q32"> A) 화면에 버튼 색을 지정하기 위해</label>
+    <label><input type="radio" name="q32"> B) 클릭 이벤트 유형(예: reserve, order, menu 등)을 구분해 분석하기 위해</label>
+    <label><input type="radio" name="q32"> C) 서버 IP를 기록하기 위해</label>
+    <label><input type="radio" name="q32"> D) 이미지 용량을 줄이기 위해</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q32')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: B) 클릭 이벤트 유형(예: reserve, order, menu 등)을 구분해 분석하기 위해</div>
+    <div class="explanation">각 버튼에 다른 <code>data-cta</code> 값을 주면 GA4에서 어떤 유형의 CTA가 클릭되었는지 쉽게 구분할 수 있다.</div>
+  </div>
+</div>
+
+<div id="q33" class="question" data-answer="B">
+  <div class="q-header">33. <code>id="cta-reserve"</code> 와 같은 ID 값을 부여하는 실무상의 장점은 무엇인가?</div>
+  <div class="options">
+    <label><input type="radio" name="q33"> A) CSS에서 색상을 제어하기 쉽다.</label>
+    <label><input type="radio" name="q33"> B) GA4나 GTM에서 특정 버튼 클릭 이벤트를 정확히 식별해 추적할 수 있다.</label>
+    <label><input type="radio" name="q33"> C) 이메일로 자동 발송할 수 있다.</label>
+    <label><input type="radio" name="q33"> D) 검색 엔진에 노출되지 않게 한다.</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q33')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: B) GA4나 GTM에서 특정 버튼 클릭 이벤트를 정확히 식별해 추적할 수 있다.</div>
+    <div class="explanation">ID는 유일하므로 태그 매니저에서 특정 버튼 클릭만 트리거로 잡을 때 매우 유용하다.</div>
+  </div>
+</div>
+
+<div id="q34" class="question" data-answer="B">
+  <div class="q-header">34. GA4 gtag 코드에서 <code>gtag('config', 'G-XXXXXXXXXX')</code> 의 역할은 무엇인가?</div>
+  <div class="options">
+    <label><input type="radio" name="q34"> A) 사용자 브라우저를 초기화한다.</label>
+    <label><input type="radio" name="q34"> B) 해당 측정 ID의 GA4 속성과 연결해 기본 페이지뷰 전송을 설정한다.</label>
+    <label><input type="radio" name="q34"> C) 서버를 재부팅한다.</label>
+    <label><input type="radio" name="q34"> D) 광고를 차단한다.</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q34')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: B) 해당 측정 ID의 GA4 속성과 연결해 기본 페이지뷰 전송을 설정한다.</div>
+    <div class="explanation">config 호출은 GA4 속성과 연결하고, 기본적으로 page_view 이벤트 전송을 담당한다.</div>
+  </div>
+</div>
+
+<div id="q35" class="question" data-answer="B">
+  <div class="q-header">35. 실습에서 <code>document.addEventListener('click', ...)</code> 코드를 사용하는 이유는?</div>
+  <div class="options">
+    <label><input type="radio" name="q35"> A) 페이지 로딩 속도를 줄이기 위해</label>
+    <label><input type="radio" name="q35"> B) 페이지 내에서 발생하는 클릭을 감지해 특정 요소 클릭 시 GA4 이벤트를 보내기 위해</label>
+    <label><input type="radio" name="q35"> C) 클릭을 막기 위해</label>
+    <label><input type="radio" name="q35"> D) 스크롤을 감지하기 위해</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q35')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: B) 페이지 내에서 발생하는 클릭을 감지해 특정 요소 클릭 시 GA4 이벤트를 보내기 위해</div>
+    <div class="explanation">문서 수준에서 click 이벤트를 감지하면, 다양한 CTA 버튼 클릭을 한 번에 추적할 수 있다.</div>
+  </div>
+</div>
+
+<div id="q36" class="question" data-answer="B">
+  <div class="q-header">36. <code>closest('[data-cta]')</code> 와 같은 코드를 사용하는 목적은?</div>
+  <div class="options">
+    <label><input type="radio" name="q36"> A) 이미지 태그를 찾기 위해</label>
+    <label><input type="radio" name="q36"> B) 클릭된 요소 또는 상위 요소 중 <code>data-cta</code> 속성이 있는 버튼을 찾아 이벤트 정보를 추출하기 위해</label>
+    <label><input type="radio" name="q36"> C) CSS 클래스를 변경하기 위해</label>
+    <label><input type="radio" name="q36"> D) 쿠키를 삭제하기 위해</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q36')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: B) 클릭된 요소 또는 상위 요소 중 <code>data-cta</code> 속성이 있는 버튼을 찾아 이벤트 정보를 추출하기 위해</div>
+    <div class="explanation">누른 요소가 아이콘이나 텍스트여도, 가장 가까운 <code>data-cta</code> 보유 요소를 찾아 올바른 CTA 정보를 보낼 수 있다.</div>
+  </div>
+</div>
+
+<div id="q37" class="question" data-answer="B">
+  <div class="q-header">37. 실습에서 <code>gtag('event', 'ctaclick', {...})</code> 이 의미하는 바는?</div>
+  <div class="options">
+    <label><input type="radio" name="q37"> A) GA4 설정을 초기화한다.</label>
+    <label><input type="radio" name="q37"> B) ‘ctaclick’라는 이름의 이벤트를 GA4로 전송하고, 부가 파라미터를 함께 보내는 것</label>
+    <label><input type="radio" name="q37"> C) 페이지를 새로고침한다.</label>
+    <label><input type="radio" name="q37"> D) 서버에 로그를 남기지 않는다.</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q37')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: B) ‘ctaclick’라는 이름의 이벤트를 GA4로 전송하고, 부가 파라미터를 함께 보내는 것</div>
+    <div class="explanation">event 호출은 GA4에 커스텀 이벤트와 관련 파라미터를 전송하는 표준 방식이다.</div>
+  </div>
+</div>
+
+<div id="q38" class="question" data-answer="B">
+  <div class="q-header">38. 버거샵 실습에서 “reserve” 유형 클릭만 따로 전환으로 보고 싶을 때 가장 적절한 설정은?</div>
+  <div class="options">
+    <label><input type="radio" name="q38"> A) 모든 ctaclick 이벤트를 전환으로 설정</label>
+    <label><input type="radio" name="q38"> B) GA4에서 이벤트 이름은 ctaclick, 파라미터 <code>ctatype = reserve</code> 조건을 이용해 전환 이벤트 생성</label>
+    <label><input type="radio" name="q38"> C) page_view만 전환으로 설정</label>
+    <label><input type="radio" name="q38"> D) 세션 시작만 전환으로 설정</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q38')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: B) GA4에서 이벤트 이름은 ctaclick, 파라미터 ctatype = reserve 조건을 이용해 전환 이벤트 생성</div>
+    <div class="explanation">이벤트 이름과 파라미터 조건을 함께 사용하면, 동일 이벤트 내에서도 특정 유형만 전환으로 집계할 수 있다.</div>
+  </div>
+</div>
+
+<div id="q39" class="question" data-answer="B">
+  <div class="q-header">39. GA4의 “맞춤 정의(Custom definitions)” 메뉴에서 해야 하는 작업은?</div>
+  <div class="options">
+    <label><input type="radio" name="q39"> A) 광고 예산 입력</label>
+    <label><input type="radio" name="q39"> B) 이벤트 파라미터(예: ctatype, buttonid)를 리포트에서 차원으로 볼 수 있도록 등록</label>
+    <label><input type="radio" name="q39"> C) 사용자 비밀번호 설정</label>
+    <label><input type="radio" name="q39"> D) 서버 IP 등록</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q39')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: B) 이벤트 파라미터(예: ctatype, buttonid)를 리포트에서 차원으로 볼 수 있도록 등록</div>
+    <div class="explanation">맞춤 정의로 등록해야 보고서에서 해당 파라미터를 필터나 분류 기준으로 사용할 수 있다.</div>
+  </div>
+</div>
+
+<div id="q40" class="question" data-answer="B">
+  <div class="q-header">40. Netlify를 사용하는 이유로 가장 적절한 것은?</div>
+  <div class="options">
+    <label><input type="radio" name="q40"> A) 코드 편집기를 제공한다.</label>
+    <label><input type="radio" name="q40"> B) 정적 사이트를 손쉽게 호스팅해 GA4 태깅이 적용된 데모 사이트를 실제처럼 테스트하기 위해</label>
+    <label><input type="radio" name="q40"> C) 데이터베이스를 구축하기 위해</label>
+    <label><input type="radio" name="q40"> D) CRM을 관리하기 위해</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q40')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: B) 정적 사이트를 손쉽게 호스팅해 GA4 태깅이 적용된 데모 사이트를 실제처럼 테스트하기 위해</div>
+    <div class="explanation">Netlify에 HTML 폴더를 올리면 간단히 URL이 생성되어 GA4 실시간·디버그 테스트를 진행할 수 있다.</div>
+  </div>
+</div>
+
+<div id="q41" class="question" data-answer="B">
+  <div class="q-header">41. 실습에서 GA4 실시간(Realtime) 보고서를 확인하는 주된 이유는?</div>
+  <div class="options">
+    <label><input type="radio" name="q41"> A) 서버 CPU 사용률을 확인하기 위해</label>
+    <label><input type="radio" name="q41"> B) 방금 구현한 태깅이 정상적으로 이벤트를 보내고 있는지 바로 검증하기 위해</label>
+    <label><input type="radio" name="q41"> C) 과거 1년 데이터를 보는 것</label>
+    <label><input type="radio" name="q41"> D) 사용자의 개인정보를 확인하기 위해</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q41')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: B) 방금 구현한 태깅이 정상적으로 이벤트를 보내고 있는지 바로 검증하기 위해</div>
+    <div class="explanation">실시간 보고서는 클릭 후 몇 초 이내에 이벤트가 도착하는지 확인할 수 있어 태깅 점검에 적합하다.</div>
+  </div>
+</div>
+
+<div id="q42" class="question" data-answer="B">
+  <div class="q-header">42. GA4 DebugView를 활용하면 할 수 있는 것은?</div>
+  <div class="options">
+    <label><input type="radio" name="q42"> A) 각 사용자 개인정보 수정</label>
+    <label><input type="radio" name="q42"> B) 디버그 모드에서 개별 이벤트 흐름과 파라미터 값을 상세히 확인</label>
+    <label><input type="radio" name="q42"> C) 광고 캠페인 집행</label>
+    <label><input type="radio" name="q42"> D) HTML 코드 자동 생성</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q42')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: B) 디버그 모드에서 개별 이벤트 흐름과 파라미터 값을 상세히 확인</div>
+    <div class="explanation">DebugView는 디버그 모드에서 발생하는 이벤트를 타임라인 형태로 보여주어 구현 검증에 사용된다.</div>
+  </div>
+</div>
+
+<div id="q43" class="question" data-answer="B">
+  <div class="q-header">43. GA4에서 “전환 이벤트”로 <code>reservectaclick</code>을 등록한 후 가장 먼저 확인해야 할 보고서는?</div>
+  <div class="options">
+    <label><input type="radio" name="q43"> A) User Acquisition</label>
+    <label><input type="radio" name="q43"> B) Conversions 보고서와 Realtime에서 전환 발생 여부</label>
+    <label><input type="radio" name="q43"> C) Tech 보고서</label>
+    <label><input type="radio" name="q43"> D) User Explorer</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q43')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: B) Conversions 보고서와 Realtime에서 전환 발생 여부</div>
+    <div class="explanation">전환으로 등록한 이벤트가 실제로 집계되는지, 실시간·전환 리포트에서 먼저 확인해야 한다.</div>
+  </div>
+</div>
+
+<div id="q44" class="question" data-answer="B">
+  <div class="q-header">44. 버거샵 실습에서 “PDF 메뉴 클릭”과 “예약 버튼 클릭”을 구분해서 분석해야 하는 이유는?</div>
+  <div class="options">
+    <label><input type="radio" name="q44"> A) 두 행동의 파일 크기가 다르기 때문에</label>
+    <label><input type="radio" name="q44"> B) 사용자의 정보 탐색 행동과 실제 예약 의도 행동을 분리해 퍼널을 이해하기 위해</label>
+    <label><input type="radio" name="q44"> C) 디자인이 다르기 때문에</label>
+    <label><input type="radio" name="q44"> D) 서버 위치가 다르기 때문에</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q44')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: B) 사용자의 정보 탐색 행동과 실제 예약 의도 행동을 분리해 퍼널을 이해하기 위해</div>
+    <div class="explanation">메뉴 보기와 예약 클릭은 퍼널 상 서로 다른 단계에 속하므로 별도로 측정해야 전환 여정을 명확히 볼 수 있다.</div>
+  </div>
+</div>
+
+<div id="q45" class="question" data-answer="B">
+  <div class="q-header">45. 실습에서 이벤트 파라미터로 <code>buttontext</code>, <code>linkurl</code>, <code>pagepath</code> 등을 함께 보내는 가장 큰 이점은?</div>
+  <div class="options">
+    <label><input type="radio" name="q45"> A) 페이지 속도 향상</label>
+    <label><input type="radio" name="q45"> B) 어떤 텍스트와 어떤 URL, 어떤 페이지에서 전환이 잘 일어나는지 세밀하게 분석할 수 있다.</label>
+    <label><input type="radio" name="q45"> C) 이미지 품질 향상</label>
+    <label><input type="radio" name="q45"> D) SEO 순위 상승</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q45')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: B) 어떤 텍스트와 어떤 URL, 어떤 페이지에서 전환이 잘 일어나는지 세밀하게 분석할 수 있다.</div>
+    <div class="explanation">버튼 텍스트, 링크, 페이지 경로를 함께 보내면 CTA 성과를 다양한 관점에서 분석할 수 있다.</div>
+  </div>
+</div>
+
+<!-- ========== 섹션 4: 마케팅 애널리틱스·소셜·성과 (46–60) ========== -->
+<h3 class="section-title">Ⅳ. 마케팅 애널리틱스·소셜·성과 (46–60번)</h3>
+
+<div id="q46" class="question" data-answer="B">
+  <div class="q-header">46. “Marketing Analytics”를 가장 잘 설명하는 것은?</div>
+  <div class="options">
+    <label><input type="radio" name="q46"> A) 광고 디자인만 담당하는 활동</label>
+    <label><input type="radio" name="q46"> B) 마케팅 활동의 효과를 측정·분석해 ROI를 극대화하고 개선점을 찾는 활동</label>
+    <label><input type="radio" name="q46"> C) 회계장부를 정리하는 활동</label>
+    <label><input type="radio" name="q46"> D) 인사고과를 평가하는 활동</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q46')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: B) 마케팅 활동의 효과를 측정·분석해 ROI를 극대화하고 개선점을 찾는 활동</div>
+    <div class="explanation">마케팅 애널리틱스는 다양한 채널·캠페인의 데이터를 분석해 효율을 극대화하는 데 초점을 둔다.</div>
+  </div>
+</div>
+
+<div id="q47" class="question" data-answer="B">
+  <div class="q-header">47. 마케팅 PDCA(Plan-Do-Check-Act) 또는 Plan-Do-See/Learn 사이클에서 GA4와 같은 분석 도구가 주로 기여하는 단계는?</div>
+  <div class="options">
+    <label><input type="radio" name="q47"> A) Plan과 Do만</label>
+    <label><input type="radio" name="q47"> B) Check와 Learn 단계에서 성과를 검증하고 인사이트를 얻는 부분</label>
+    <label><input type="radio" name="q47"> C) 인사 관리 단계</label>
+    <label><input type="radio" name="q47"> D) 법무 검토 단계</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q47')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: B) Check와 Learn 단계에서 성과를 검증하고 인사이트를 얻는 부분</div>
+    <div class="explanation">캠페인 이후의 성과 측정과 학습 단계에서 GA4 데이터가 핵심 근거로 사용된다.</div>
+  </div>
+</div>
+
+<div id="q48" class="question" data-answer="B">
+  <div class="q-header">48. 퍼포먼스 마케팅(Performance Marketing)의 특징으로 가장 적절한 것은?</div>
+  <div class="options">
+    <label><input type="radio" name="q48"> A) 장기적인 브랜드 이미지 형성만을 목표로 한다.</label>
+    <label><input type="radio" name="q48"> B) 클릭, 전환 등 측정 가능한 성과지표를 기반으로 집행·최적화된다.</label>
+    <label><input type="radio" name="q48"> C) 오프라인 이벤트에만 집중한다.</label>
+    <label><input type="radio" name="q48"> D) 측정이 거의 불가능하다.</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q48')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: B) 클릭, 전환 등 측정 가능한 성과지표를 기반으로 집행·최적화된다.</div>
+    <div class="explanation">퍼포먼스 마케팅은 성과가 수치로 드러나는 하위 퍼널 지표에 특히 집중한다.</div>
+  </div>
+</div>
+
+<div id="q49" class="question" data-answer="B">
+  <div class="q-header">49. 브랜딩 중심의 캠페인(Brand Marketing)의 주요 목표로 적절한 것은?</div>
+  <div class="options">
+    <label><input type="radio" name="q49"> A) 단기 CPA 최적화</label>
+    <label><input type="radio" name="q49"> B) 브랜드 인지도·호감도·연상 강화 등 상단 퍼널 성과</label>
+    <label><input type="radio" name="q49"> C) 창고 재고 정리</label>
+    <label><input type="radio" name="q49"> D) 인사 채용</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q49')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: B) 브랜드 인지도·호감도·연상 강화 등 상단 퍼널 성과</div>
+    <div class="explanation">브랜딩 캠페인은 장기적인 브랜드 자산을 키우는 데 초점을 둔다.</div>
+  </div>
+</div>
+
+<div id="q50" class="question" data-answer="B">
+  <div class="q-header">50. 다음 중 KPI(Key Performance Indicator)의 예로 가장 적절한 것은?</div>
+  <div class="options">
+    <label><input type="radio" name="q50"> A) 사무실 층수</label>
+    <label><input type="radio" name="q50"> B) 캠페인별 CTR, CVR, CPA, ROAS</label>
+    <label><input type="radio" name="q50"> C) 책상 개수</label>
+    <label><input type="radio" name="q50"> D) 팀원 이름 수</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q50')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: B) 캠페인별 CTR, CVR, CPA, ROAS</div>
+    <div class="explanation">KPI는 비즈니스·캠페인 목표 달성 정도를 직접적으로 보여주는 핵심 지표를 의미한다.</div>
+  </div>
+</div>
+
+<div id="q51" class="question" data-answer="B">
+  <div class="q-header">51. 클릭률(CTR)을 올바르게 설명한 것은?</div>
+  <div class="options">
+    <label><input type="radio" name="q51"> A) 전환 수 ÷ 노출 수</label>
+    <label><input type="radio" name="q51"> B) 광고 클릭 수 ÷ 광고 노출 수</label>
+    <label><input type="radio" name="q51"> C) 매출 ÷ 사용자 수</label>
+    <label><input type="radio" name="q51"> D) 세션 수 ÷ 사용자 수</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q51')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: B) 광고 클릭 수 ÷ 광고 노출 수</div>
+    <div class="explanation">CTR은 노출된 광고 중 실제로 클릭으로 이어진 비율을 뜻한다.</div>
+  </div>
+</div>
+
+<div id="q52" class="question" data-answer="B">
+  <div class="q-header">52. ROAS(Return On Ad Spend)를 가장 잘 설명하는 것은?</div>
+  <div class="options">
+    <label><input type="radio" name="q52"> A) 광고비 ÷ 매출</label>
+    <label><input type="radio" name="q52"> B) 매출 ÷ 광고비</label>
+    <label><input type="radio" name="q52"> C) 직원 수 ÷ 광고비</label>
+    <label><input type="radio" name="q52"> D) 세션 수 ÷ 클릭 수</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q52')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: B) 매출 ÷ 광고비</div>
+    <div class="explanation">ROAS는 광고에 쓴 1원당 얼마의 매출을 만들어냈는지 보여주는 지표이다.</div>
+  </div>
+</div>
+
+<div id="q53" class="question" data-answer="B">
+  <div class="q-header">53. 소셜 미디어 마케팅에서 “Owned Media”에 해당하는 예시는?</div>
+  <div class="options">
+    <label><input type="radio" name="q53"> A) 경쟁사 블로그</label>
+    <label><input type="radio" name="q53"> B) 자사 공식 인스타그램 계정</label>
+    <label><input type="radio" name="q53"> C) 언론 기사</label>
+    <label><input type="radio" name="q53"> D) 포털 메인 뉴스</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q53')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: B) 자사 공식 인스타그램 계정</div>
+    <div class="explanation">Owned Media는 기업이 직접 소유·관리하는 채널(웹사이트, 공식 SNS 등)을 의미한다.</div>
+  </div>
+</div>
+
+<div id="q54" class="question" data-answer="B">
+  <div class="q-header">54. “Paid Media”의 대표적인 예시는?</div>
+  <div class="options">
+    <label><input type="radio" name="q54"> A) 자사 홈페이지</label>
+    <label><input type="radio" name="q54"> B) 페이스북·인스타그램 유료 광고</label>
+    <label><input type="radio" name="q54"> C) 고객 후기</label>
+    <label><input type="radio" name="q54"> D) 사내 뉴스레터</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q54')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: B) 페이스북·인스타그램 유료 광고</div>
+    <div class="explanation">Paid Media는 비용을 지불하고 집행하는 디지털 광고 영역을 의미한다.</div>
+  </div>
+</div>
+
+<div id="q55" class="question" data-answer="B">
+  <div class="q-header">55. “Earned Media”를 설명하는 문장으로 가장 적절한 것은?</div>
+  <div class="options">
+    <label><input type="radio" name="q55"> A) 비용을 내고 광고를 집행하는 매체</label>
+    <label><input type="radio" name="q55"> B) 고객 자발적 공유, 입소문 등으로 획득한 노출</label>
+    <label><input type="radio" name="q55"> C) 회사가 직접 운영하는 채널</label>
+    <label><input type="radio" name="q55"> D) 내부 직원용 시스템</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q55')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: B) 고객 자발적 공유, 입소문 등으로 획득한 노출</div>
+    <div class="explanation">Earned Media는 언론 보도, 리뷰, SNS 공유 등 외부에서 자발적으로 발생한 노출을 의미한다.</div>
+  </div>
+</div>
+
+<div id="q56" class="question" data-answer="B">
+  <div class="q-header">56. Social Listening의 주요 목적은 무엇인가?</div>
+  <div class="options">
+    <label><input type="radio" name="q56"> A) 사내 회의 일정 관리</label>
+    <label><input type="radio" name="q56"> B) 온라인에서 브랜드·이슈에 대한 대화량과 감성을 분석해 인사이트를 얻는 것</label>
+    <label><input type="radio" name="q56"> C) 서버 로그 수집</label>
+    <label><input type="radio" name="q56"> D) 오프라인 설문만 분석</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q56')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: B) 온라인에서 브랜드·이슈에 대한 대화량과 감성을 분석해 인사이트를 얻는 것</div>
+    <div class="explanation">소셜 리스닝 도구를 통해 브랜드 평판, 이슈 반응 등을 정량·정성적으로 파악할 수 있다.</div>
+  </div>
+</div>
+
+<div id="q57" class="question" data-answer="C">
+  <div class="q-header">57. Web Analytics(웹 로그 분석)를 통해 얻을 수 있는 정보로 적절하지 않은 것은?</div>
+  <div class="options">
+    <label><input type="radio" name="q57"> A) 방문자의 기기·브라우저 정보</label>
+    <label><input type="radio" name="q57"> B) 페이지별 유입·이탈 경로</label>
+    <label><input type="radio" name="q57"> C) 실시간 서버 온도</label>
+    <label><input type="radio" name="q57"> D) 캠페인별 유입채널 성과</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q57')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: C) 실시간 서버 온도</div>
+    <div class="explanation">웹 애널리틱스는 사용자의 접속·행동 데이터를 다루며, 서버 온도 같은 인프라 지표는 다루지 않는다.</div>
+  </div>
+</div>
+
+<div id="q58" class="question" data-answer="A">
+  <div class="q-header">58. 검색광고(SEM)에서 “CPC”가 의미하는 것은?</div>
+  <div class="options">
+    <label><input type="radio" name="q58"> A) 클릭당 비용</label>
+    <label><input type="radio" name="q58"> B) 전환당 비용</label>
+    <label><input type="radio" name="q58"> C) 세션당 비용</label>
+    <label><input type="radio" name="q58"> D) 사용자당 비용</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q58')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: A) 클릭당 비용</div>
+    <div class="explanation">CPC는 광고 한 번 클릭에 평균적으로 지불하는 비용을 의미한다.</div>
+  </div>
+</div>
+
+<div id="q59" class="question" data-answer="C">
+  <div class="q-header">59. 검색광고 성과를 판단할 때 가장 기본적으로 확인하는 두 가지 지표 조합은?</div>
+  <div class="options">
+    <label><input type="radio" name="q59"> A) 페이지 수와 서버 수</label>
+    <label><input type="radio" name="q59"> B) 노출수와 직원 수</label>
+    <label><input type="radio" name="q59"> C) 노출수와 클릭수(그리고 CTR)</label>
+    <label><input type="radio" name="q59"> D) 재고 수와 매출총이익</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q59')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: C) 노출수와 클릭수(그리고 CTR)</div>
+    <div class="explanation">검색광고 성과의 1차 평가는 얼마나 노출되고, 그 중 얼마나 클릭되는지(CTR)에서 시작한다.</div>
+  </div>
+</div>
+
+<div id="q60" class="question" data-answer="B">
+  <div class="q-header">60. 모바일 앱 마케팅에서 “Retention Rate(잔존율)”을 가장 잘 설명한 것은?</div>
+  <div class="options">
+    <label><input type="radio" name="q60"> A) 설치 직후 삭제 비율</label>
+    <label><input type="radio" name="q60"> B) 일정 기간 이후에도 앱을 계속 사용하는 사용자 비율</label>
+    <label><input type="radio" name="q60"> C) 설치 비용</label>
+    <label><input type="radio" name="q60"> D) 서버 유지비</label>
+  </div>
+  <button class="show-answer-btn" onclick="toggleAnswer('q60')">정답 보기</button>
+  <div class="answer-block">
+    <div class="answer-text">정답: B) 일정 기간 이후에도 앱을 계속 사용하는 사용자 비율</div>
+    <div class="explanation">잔존율은 설치 후 일정 시점까지 앱을 유지·사용하는 사용자의 비율로, 앱 충성도를 보여주는 핵심 지표이다.</div>
+  </div>
+</div>
+
+<script>
+  function toggleAnswer(id) {
+    const q = document.getElementById(id);
+    const block = q.querySelector('.answer-block');
+    block.style.display = block.style.display === 'block' ? 'none' : 'block';
+  }
+
+  function toggleAll(show) {
+    const blocks = document.querySelectorAll('.answer-block');
+    blocks.forEach(b => {
+      b.style.display = show ? 'block' : 'none';
+    });
+  }
+</script>
+
+</body>
+</html>
